@@ -1,5 +1,5 @@
 export function Store(){
   return(
-    <h3>Hello Store</h3>
+    <h3>Store</h3>
   )
 }
