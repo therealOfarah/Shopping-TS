@@ -1,6 +1,8 @@
 import { Container, Nav, Navbar as NavbarBoot,Button } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
+import { useShoppingCart } from "../context/ShoppingCartContext"
 export function Navbar(){
+  const {openCart, cartQuantity} = useShoppingCart({})
   return(
     <NavbarBoot sticky="top" className='bg-white shadow-lg mb-3'
       >
@@ -10,7 +12,9 @@ export function Navbar(){
           <Nav.Link to='/store' as={NavLink}>Store</Nav.Link>
           <Nav.Link to='/about' as={NavLink}>About</Nav.Link>
         </Nav>
-        <Button style={{width : "3rem", height: "3rem", position: "relative"}}variant='outline-primary'
+        {cartQuantity > 0 && (
+        <Button onClick={openCart}
+        style={{width : "3rem", height: "3rem", position: "relative"}}variant='outline-primary'
         className='rounded-circle'>
           <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 512">
             <g data-name="&lt;Group&gt;">
@@ -18,8 +22,9 @@ export function Navbar(){
             <path fill="#00acea" d="M393.1 402.1a40.8 40.8 0 1 1-40.8 40.8A40.843 40.843 0 0 1 393.1 402.1zM179.2 402.1a40.8 40.8 0 1 1-40.8 40.8A40.779 40.779 0 0 1 179.2 402.1zM423.9 357.8H195.7a59.918 59.918 0 0 1-59.2-50L96.4 71.6A39.929 39.929 0 0 0 57 38.3H39.9a10 10 0 0 1 0-20H57a59.737 59.737 0 0 1 59.1 50l40.1 236.3a39.929 39.929 0 0 0 39.4 33.3H423.8a10.029 10.029 0 0 1 10 10A9.859 9.859 0 0 1 423.9 357.8z"/>
             </g>
           </svg>
-        <div className='rounded-circle bg-danger d-flex justify-content-center align-items-center' style={{color:'white', width:'1.5rem', height:'1.5rem', position: 'absolute', bottom:0, right:0, transform: 'translate(25%, 25%)'}}>3</div>
+        <div className='rounded-circle bg-danger d-flex justify-content-center align-items-center' style={{color:'white', width:'1.5rem', height:'1.5rem', position: 'absolute', bottom:0, right:0, transform: 'translate(25%, 25%)'}}>{cartQuantity}</div>
         </Button>
+            )}
       </Container>
     </NavbarBoot>
   )
