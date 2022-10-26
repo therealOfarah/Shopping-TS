@@ -14,4 +14,4 @@ export function useLocalStorage<T> (key: string, initalValue:T | (()=> T)){
     localStorage.setItem(key ,JSON.stringify(value))
   }, [key, value])
   return [value, setValue] as [typeof value, typeof setValue]
-}e
+}
