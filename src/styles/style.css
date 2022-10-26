@@ -1,0 +1,30 @@
+.image{
+  display:flex;
+  justify-content: center;
+  
+}
+section{
+  margin-top: 3%;
+}
+.title{
+
+  margin-top: 2%;
+}
+p{
+  width: 50%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: left;
+  font-size: 32px;
+  /* box-shadow: inset 5px 0 5px -5px #29627e; */
+  /* font-style: italic; */
+  color: #29627e;
+}
+img{
+  height:450px;
+  margin-top: 20px;
+}
+.Slogan{
+  text-align: center;
+
+}
