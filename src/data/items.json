@@ -2,25 +2,57 @@
   {
     "id": 1,
     "name": "Ghost Oreo Whey",
-    "price": 10.99,
+    "type":"Protein Shake",
+    "price": 49.99,
     "imgUrl": "/images/oreo.webp"
   },
   {
     "id": 2,
     "name": "Ghost Nutter Butters Whey",
-    "price": 1199,
+    "type":"Protein Shake",
+    "price":49.99,
     "imgUrl": "/images/peanuts.jpg"
   },
   {
     "id": 3,
     "name": "Chocolate Whey",
-    "price": 1.05,
+    "type":"Protein Shake",
+    "price": 69.99,
     "imgUrl": "/images/whey.jpg"
   },
   {
     "id": 4,
     "name": "Ghost Chips Ahoy Whey",
-    "price": 14000,
+    "type":"Protein Shake",
+    "price": 49.99,
     "imgUrl": "/images/chips.jpg"
+  },
+  {
+    "id": 5,
+    "type":"Pre-Workout",
+    "name": "Ryse Baja Blast",
+    "price": 59.99,
+    "imgUrl": "/images/images-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Beyond Raw Jolly Rancher",
+    "type":"Pre-Workout",
+    "price": 39.99,
+    "imgUrl": "/images/images-2.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Insane Labz Psychotic",
+    "type":"Pre-Workout",
+    "price": 64.99,
+    "imgUrl": "/images/images-3.jpg"
+  },
+  {
+    "id": 8,
+    "name":"Ryse RingPop",
+    "type":"Pre-Workout",
+    "price": 59.99,
+    "imgUrl": "/images/images.jpg"
   }
 ]

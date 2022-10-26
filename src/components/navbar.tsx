@@ -10,8 +10,8 @@ export function Navbar(){
         <Nav className='me-auto'>
           <Nav.Link to='/' as={NavLink}>Home</Nav.Link>
           <Nav.Link to='/store' as={NavLink}>Store</Nav.Link>
-          <Nav.Link to='/about' as={NavLink}>About</Nav.Link>
         </Nav>
+        <h3 className='me-auto'style={{color:"red"}}>GNC</h3>
         {cartQuantity > 0 && (
         <Button onClick={openCart}
         style={{width : "3rem", height: "3rem", position: "relative"}}variant='outline-primary'
