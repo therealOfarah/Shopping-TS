@@ -4,7 +4,7 @@
     "name": "Ghost Oreo Whey",
     "type":"Protein Shake",
     "price": 49.99,
-    "imgUrl": "../src/images/oreo.webp"
+    "imgUrl": "../src/images/oreo.png"
   },
   {
     "id": 2,
