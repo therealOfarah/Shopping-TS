@@ -3,13 +3,13 @@ import { Container } from "react-bootstrap"
 import { Home } from "./Pages/home"
 import { Store } from "./Pages/Store"
 import { About } from "./Pages/About"
-import { Navbar } from "./components/navbar"
+import {  NavbarTop } from "./components/navbar"
 import { ShoppingCartProvider } from "./context/ShoppingCartContext"
 
 function App() {
   return (
     <ShoppingCartProvider>
-      <Navbar />
+      <NavbarTop />
       <Container className="mb-4">
         <Routes>
           <Route path="/" element={<Home />} />

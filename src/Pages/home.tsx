@@ -1,20 +1,40 @@
 import { Link } from "react-router-dom";
-import "../styles/style.css"
-import "/src/images/googleImage.png";
+import Carousel from 'react-bootstrap/Carousel';
+import make from '../images/make.jpg'
+import mixed from '../images/mixed.jpg'
+import download from '../images/download.jpg'
 export function Home() {
   return (
     <>
-    <section>
-      <h2 className="title">ABOUT GNC - AUBURN MALL</h2>
-      <p>Whether your goal is to stay fit, lose weight, build mass or supplement your daily wellness, our knowledgeable Coaches are happy to point the way. Come on in! Let's live long, live well and make it a community endeavor!</p>
-      <h6 className="Slogan">Come visit us at our 550 Center St store in Auburn, ME today!</h6>
-      <div className="image">
-      <a href="https://www.google.com/maps/place/GNC/@44.1221582,-70.2283739,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x604a2dcad55969de!8m2!3d44.1221582!4d-70.2283739">
-        <img style={{}} src="/src/images/googleImage.png" alt="" /></a>
-      </div>
-    </section>
-    <h5></h5>
+    <div >
+    <Carousel fade style={{display:"flex",justifyContent:"center", marginTop:"10vh"}} >
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={download}
+          alt="First slide"
+          style={{maxWidth:"750px", maxHeight:"750px"}}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={make}
+          alt="Second slide"
+          style={{maxWidth:"750px", maxHeight:"750px"}}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={mixed}
+          alt="Third slide"
+          style={{maxWidth:"750px", maxHeight:"750px"}}
+        />
+      </Carousel.Item>
+    </Carousel>
+    </div>
+
     </>
-    
   );
 }
