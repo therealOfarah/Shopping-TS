@@ -32,7 +32,7 @@
     "type":"Pre-Workout",
     "name": "Ryse Baja Blast",
     "price": 59.99,
-    "imgUrl": "../src/images/Ryse Baja Blast.jpeg"
+    "imgUrl": "../src/images/Ryse Baja Blast.webp"
   },
   {
     "id": 6,
@@ -53,6 +53,6 @@
     "name":"Ryse RingPop",
     "type":"Pre-Workout",
     "price": 59.99,
-    "imgUrl": "../src/images/Ryse RingPop.jpeg"
+    "imgUrl": "../src/images/Ryse RingPop.webp"
   }
 ]

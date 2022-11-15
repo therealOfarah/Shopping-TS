@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
 import make from '../images/make.jpg'
 import mixed from '../images/mixed.jpg'

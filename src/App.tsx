@@ -7,7 +7,7 @@ import {  NavbarTop } from "./components/navbar"
 import { ShoppingCartProvider } from "./context/ShoppingCartContext"
 
 function App() {
-  return (
+  return(
     <ShoppingCartProvider>
       <NavbarTop />
       <Container className="mb-4">
