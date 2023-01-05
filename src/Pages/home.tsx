@@ -1,40 +1,21 @@
 // import { Link } from "react-router-dom";
-import Carousel from 'react-bootstrap/Carousel';
-import make from '../images/make.jpg'
-import mixed from '../images/mixed.jpg'
-import download from '../images/download.jpg'
+import GNCphoto from '../images/GNCphoto.jpg'
+import data from '../data/home.json'
+import { Card, Col } from 'react-bootstrap';
+import { StoreItem } from "../components/StoreItem"
+import "../styles/home.css"
 export function Home() {
   return (
     <>
-    <div >
-    <Carousel fade style={{display:"flex",justifyContent:"center", marginTop:"10vh"}} >
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={download}
-          alt="First slide"
-          style={{maxWidth:"750px", maxHeight:"750px"}}
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={make}
-          alt="Second slide"
-          style={{maxWidth:"750px", maxHeight:"750px"}}
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={mixed}
-          alt="Third slide"
-          style={{maxWidth:"750px", maxHeight:"750px"}}
-        />
-      </Carousel.Item>
-    </Carousel>
+    <div className='banner' >
+      <img src={GNCphoto} alt="" style={{width:"1400px", height:"450px", marginLeft:"-50px",marginTop:"2vh"}}/>
     </div>
-
+    <h3 style={{textAlign:"center",marginTop:"20px",marginBottom:"20px"}}>Todays Hit's</h3>
+    <div className="trending" style={{display:"flex",justifyContent:"center"}}>
+    {data.map( item=>
+      <Col key={item.id}><StoreItem {...item}/></Col>
+      )}
+    </div>
     </>
   );
 }

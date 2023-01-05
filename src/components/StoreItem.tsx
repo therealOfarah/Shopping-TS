@@ -13,7 +13,6 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItem) {
     getItemQuantity,
     increaseCartQuantity,
     decreaseCartQuantity,
-    removeQuantity,
   } = useShoppingCart()
   const quantity = getItemQuantity(id)
 
@@ -32,32 +31,30 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItem) {
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ? (
+            
             <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
               + Add To Cart
             </Button>
           ) : (
+            <>
+            <div style={{backgroundColor:"#0275d8",borderRadius:"20px"}}>
             <div
-              className="d-flex align-items-center flex-column"
-              style={{ gap: ".5rem" }}
+            className="d-flex align-items-center flex-column"
+            style={{ gap: "1rem" }}
             >
               <div
                 className="d-flex align-items-center justify-content-center"
                 style={{ gap: ".5rem" }}
-              >
-                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                >
+                <Button onClick={() => decreaseCartQuantity(id)} style={{width:"70px"}}>-</Button>
                 <div>
                   <span className="fs-3">{quantity}</span> in cart
                 </div>
-                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                <Button onClick={() => increaseCartQuantity(id)} style={{width:"70px"}}>+</Button>
               </div>
-              <Button
-                onClick={() => removeQuantity(id)}
-                variant="danger"
-                size="sm"
-              >
-                Remove
-              </Button>
             </div>
+            </div>
+            </>
           )}
         </div>
       </Card.Body>

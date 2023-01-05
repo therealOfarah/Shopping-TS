@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Ghost Oreo Whey",
+    "type":"Protein Shake",
+    "price": 49.99,
+    "imgUrl": "../src/images/oreo.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Ghost Chips Ahoy Whey",
+    "type":"Protein Shake",
+    "price": 49.99,
+    "imgUrl": "../src/images/Ghost Chips Ahoy Whey.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Chocolate Whey",
+    "type":"Protein Shake",
+    "price": 69.99,
+    "imgUrl": "../src/images/Chocolate Whey.webp"
+  },
+  {
+    "id": 5,
+    "type":"Pre-Workout",
+    "name": "Ryse Baja Blast",
+    "price": 59.99,
+    "imgUrl": "../src/images/Ryse Baja Blast.webp"
+  }
+]
