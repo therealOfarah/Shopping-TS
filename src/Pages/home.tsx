@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import GNCphoto from '../images/GNCphoto.jpg'
+import GNCphoto from '../../public/assets/images/GNCphoto.jpg'
 import data from '../data/home.json'
 import { Card, Col } from 'react-bootstrap';
 import { StoreItem } from "../components/StoreItem"
