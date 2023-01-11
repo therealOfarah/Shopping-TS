@@ -7,8 +7,8 @@ import "../styles/home.css"
 export function Home() {
   return (
     <>
-    <div className='banner' >
-      <img src={GNCphoto} alt="" style={{width:"1400px", height:"450px", marginLeft:"-50px",marginTop:"2vh"}}/>
+    <div className="banner" >
+      <img className='image' src={GNCphoto} alt="" />
     </div>
     <h3 style={{textAlign:"center",marginTop:"20px",marginBottom:"20px"}}>Todays Hit's</h3>
     <div className="trending" style={{display:"flex",justifyContent:"center"}}>

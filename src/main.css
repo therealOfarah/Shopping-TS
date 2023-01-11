@@ -1,0 +1,29 @@
+.banner .image{
+  width:1400px; 
+  height:450px; 
+  margin-left:-50px;
+  margin-top:2vh
+  
+}
+.trending {
+  display:flex; justify-content:center
+}
+@media screen and (min-device-width: 380px) and (max-width: 768px) {
+  .banner .image {
+    width:370px;
+    height:230px;
+    margin-left:10px;
+    margin-top:2vh;
+  }
+  .trending {
+    display:flex; 
+    flex-direction: column;
+    justify-content:center;
+    margin-left:10vw;
+    margin-top:2vh;
+  }
+  .trending .col{
+    width:300px;
+    margin-top:2vh;
+  }
+}
