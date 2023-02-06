@@ -13,8 +13,8 @@ export function CartItem({id, quantity}: CartItemsProps){
   if(item == null) return null
   return( 
   <>
-  <Stack direction="horizontal" className="d-flex align-items-center" gap={2}>
-    <img src={item.imgUrl} style={{width:"125px", height:'75px', objectFit:"cover"}} />
+  <Stack direction="horizontal" className="d-flex align-items-center" gap={1}>
+    <img src={item.imgUrl} style={{width:"225px", height:'175px', objectFit:"cover"}} />
   <div className="me-auto">
     <div>
       {item.name}{quantity >1 && <span 

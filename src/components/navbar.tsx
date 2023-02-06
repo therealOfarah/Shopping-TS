@@ -17,6 +17,7 @@ export function NavbarTop(){
             >
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/store">Items</Nav.Link>
+              <Nav.Link href="/cart">Cart</Nav.Link>
             </Nav>
               {cartQuantity > 0 && (
                 <Button onClick={openCart}
